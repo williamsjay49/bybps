@@ -11,7 +11,7 @@
 <body>
   <div class="main">
     <p class="sign" align="center">Let me in</p>
-    <form class="form1">
+    <form class="form1" id="login-submit-form">
       <div class="login-error"></div>
       <input class="un " id="login-username" name="login_username" type="text" align="center" placeholder="Username">
       <!-- username error here -->

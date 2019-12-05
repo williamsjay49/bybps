@@ -15,7 +15,7 @@ if($_GET['login_form'] && $_GET['login_form'] == 'true'){
 	//calling method to find user
 	$user_found = Db_object::verify_user($username, $password);
 
-	if($result){
+	if($user_found){
         $r = $query->fetch(PDO::FETCH_OBJ);
         $db_password = $r->password;
         if(password_verify($password, $db_password)){
